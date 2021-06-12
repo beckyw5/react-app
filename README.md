@@ -18,3 +18,5 @@ To start development server
 ```
 npm start
 ```
+This script can be viewed in the `package.json` file
+under **scripts**.
