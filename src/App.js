@@ -5,7 +5,7 @@ import Person from './Person/Person';
 function App() {
   return (
     <div className="App">
-      <h1>Hi, Im a React App</h1>
+        <h1>Hi, Im a React App</h1>
         <Person />
     </div>
   );
