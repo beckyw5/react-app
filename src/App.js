@@ -18,9 +18,12 @@ const App = props => {
                 { name: 'Bexica', age: 28},
                 { name: 'Becky', age: 39},
                 { name: 'Dexter', age: 26}
-            ]
+            ],
+            otherState: personsState.otherState
         });
     };
+
+    console.log(personsState);
 
     return (
         <div className="App">
