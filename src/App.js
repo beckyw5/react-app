@@ -23,8 +23,6 @@ const App = props => {
         });
     };
 
-    console.log(personsState);
-
     return (
         <div className="App">
             <h1>Hi, Im a React App</h1>
