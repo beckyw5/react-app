@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Intro from "../components/Intro/intro";
 import Persons from "../components/Persons/Persons";
 
 class App extends Component {
@@ -75,12 +76,7 @@ class App extends Component {
 
         return (
             <div className="app">
-                <div className="app__title">
-                    <h1>Hi, Im a React App</h1>
-                    <button
-                        style={style}
-                        onClick={this.togglePersonHandler}>Toggle Persons</button>
-                </div>
+                <Intro toggle={this.togglePersonHandler} style={style}/>
                 {persons}
             </div>
         )
