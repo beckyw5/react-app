@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from 'intro.css';
+import './intro.css';
 
 const intro = (props) => {
     return (
