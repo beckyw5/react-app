@@ -5,7 +5,7 @@ import './intro.css';
 const intro = (props) => {
     return (
         <div className="app__title">
-            <h1>Hi, Im a React App</h1>
+            <h1>{props.title}</h1>
             <button
                 style={props.style}
                 onClick={props.toggle}>Toggle Persons</button>

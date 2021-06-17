@@ -4,10 +4,7 @@ import './index.css';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ReactDOM.render( <App appTitle="Hi, I'm a React" />,
   document.getElementById('root')
 );
 

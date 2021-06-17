@@ -76,7 +76,7 @@ class App extends Component {
 
         return (
             <div className="app">
-                <Intro toggle={this.togglePersonHandler} style={style}/>
+                <Intro toggle={this.togglePersonHandler} style={style} title={this.props.appTitle}/>
                 {persons}
             </div>
         )
