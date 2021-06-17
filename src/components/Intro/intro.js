@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classes from 'intro.css';
+
 const intro = (props) => {
     return (
         <div className="app__title">
