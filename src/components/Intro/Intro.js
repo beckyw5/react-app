@@ -5,7 +5,11 @@ import './Intro.css';
 const Intro = (props) => {
     useEffect(() => {
         console.log('[intro.js] useEffect');
+        const timer = setTimeout(() => {
+            alert('Saved data to cloud');
+        }, 1000);
         return () => {
+            clearTimeout(timer);
             console.log('[intro.js] cleanup work in useEffect');
         }
     }, []);
