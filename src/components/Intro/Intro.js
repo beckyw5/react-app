@@ -6,7 +6,7 @@ const Intro = (props) => {
     useEffect(() => {
         console.log('[intro.js] useEffect');
         const timer = setTimeout(() => {
-            alert('Saved data to cloud');
+            console.log('Saved data to cloud');
         }, 1000);
         return () => {
             clearTimeout(timer);
