@@ -26,6 +26,19 @@ class App extends Component {
         });
     }
 
+    componentDidMount() {
+        console.log('[App.js] componentDidMount');
+    }
+
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        console.log('[App.js] shouldComponentUpdate');
+        return true;
+    }
+
+    componentDidUpdate() {
+        console.log('[Persons.js] componentDidUpdate');
+    }
+
     nameChangedHandler = (event, id) => {
         const personIndex = this.state.persons.findIndex(p => {
             return p.id === id;
@@ -51,11 +64,6 @@ class App extends Component {
     togglePersonHandler = () => {
         const doesShow = this.state.showPersons;
         this.setState({showPersons: !doesShow});
-    }
-
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('[Persons.js] componentDidUpdate');
-        console.log(snapshot);
     }
 
     componentWillUnmount() {
