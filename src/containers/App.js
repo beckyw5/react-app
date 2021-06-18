@@ -12,7 +12,8 @@ class App extends Component {
             { id: 789, name: 'Bexter', age: 26}
         ],
         otherState: 'some other value',
-        showPersons: false
+        showPersons: false,
+        showTitle: true
     }
 
     switchNameHandler = (newName) => {
@@ -86,7 +87,14 @@ class App extends Component {
 
         return (
             <div className="app">
-                <Intro toggle={this.togglePersonHandler} style={style} title={this.props.appTitle}/>
+                <button
+                    onClick={() => {
+                        this.setState({showTitle: false});
+                    }}
+                >Remove Intro</button>
+                {this.state.showTitle ?
+                    <Intro toggle={this.togglePersonHandler} style={style} title={this.props.appTitle}/>
+                    : null }
                 {persons}
             </div>
         )

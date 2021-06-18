@@ -5,7 +5,10 @@ import './Intro.css';
 const Intro = (props) => {
     useEffect(() => {
         console.log('[intro.js] useEffect');
-    });
+        return () => {
+            console.log('[intro.js] cleanup work in useEffect');
+        }
+    }, []);
 
     return (
         <div className="app__title">
