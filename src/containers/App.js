@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Intro from "../components/Intro/intro";
+import Intro from "../components/Intro/Intro";
 import Persons from "../components/Persons/Persons";
 
 class App extends Component {
@@ -52,7 +52,17 @@ class App extends Component {
         this.setState({showPersons: !doesShow});
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('[Persons.js] componentDidUpdate');
+        console.log(snapshot);
+    }
+
+    componentWillUnmount() {
+        console.log('[Persons.js] componentWillUnmount');
+    }
+
     render() {
+        console.log('[Persons.js] rendering...');
         const style = {
             backgroundColor: 'white',
             font: 'inherit',

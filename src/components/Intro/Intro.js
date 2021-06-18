@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 
-import './intro.css';
+import './Intro.css';
 
-const intro = (props) => {
+const Intro = (props) => {
     useEffect(() => {
         console.log('[intro.js] useEffect');
     });
@@ -17,4 +17,4 @@ const intro = (props) => {
     );
 };
 
-export default intro;
+export default Intro;
