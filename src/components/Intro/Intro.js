@@ -10,6 +10,13 @@ const Intro = (props) => {
         }
     }, []);
 
+    useEffect(() => {
+        console.log('[intro.js] 2 useEffect');
+        return () => {
+            console.log('[intro.js] 2nd cleanup work in useEffect');
+        }
+    });
+
     return (
         <div className="app__title">
             <h1>{props.title}</h1>
